@@ -9,6 +9,11 @@ readme = "README.md"
 python = "^3.12"
 requests = "^2.32.3"
 beautifulsoup4 = "^4.12.3"
+sentence-transformers = "^3.1.1"
+faiss-cpu = "^1.8.0.post1"
+nltk = "^3.9.1"
+openai = "^1.50.2"
+azure-identity = "^1.18.0"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -20,3 +25,5 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 dlg = "mrs_gutenberg.download-gutenberg:main"
+cai = "mrs_gutenberg.call_open_ai:main"
+fbs = "mrs_gutenberg.fiass_book_search:main"
